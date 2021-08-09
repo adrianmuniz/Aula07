@@ -10,6 +10,13 @@ public class EntendendoFuncoes {
 		System.out.println("Bem vindo ao programa, " + nome);
 	}
 	
+	//funcao com argumentos e com return
+	public static String nomeCompleto(String nome, String sobrenome) {
+		String nomeSobrenome;
+		nomeSobrenome = nome + " " + sobrenome;
+		return nomeSobrenome;
+	}
+	
 	public static void main(String[] args) {
 		
 		//System.out.println("Bem vindo ao Programa!");
@@ -23,6 +30,8 @@ public class EntendendoFuncoes {
 			saudar(nome[i]);
 		}
 		
+		System.out.println(nomeCompleto("André", "David"));
+		saudar(nomeCompleto("Barack", "Obama"));
 	}
 
 	
